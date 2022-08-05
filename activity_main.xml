@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/baseline"
+                android:layout_width="220dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello1"/>
+
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+
+
+            <ImageButton
+                android:id="@+id/btn123"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:src="@drawable/right"
+                android:background="@android:color/transparent"
+                android:layout_toRightOf="@+id/baseline"
+                android:layout_centerVertical="true"
+                android:layout_alignBottom="@+id/baseline"/>
+
+            <ImageButton
+                android:id="@+id/Imgbtn1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn123"
+                android:layout_alignStart="@+id/btn123"
+                android:background="@android:color/transparent"
+                android:src="@drawable/internet"/>
+
+            <ImageButton
+                android:id="@+id/Imgbtn2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Imgbtn1"
+                android:layout_alignStart="@+id/Imgbtn1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/rrrr"/>
+
+            <ImageButton
+                android:id="@+id/Imgbtnhart1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Imgbtn2"
+                android:layout_alignStart="@+id/Imgbtn2"
+                android:background="@android:color/transparent"
+                android:src="@drawable/heart2"/>
+
+            <ImageButton
+                android:id="@+id/Imgbtnhart2"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/Imgbtn2"
+                android:layout_alignStart="@+id/Imgbtn2"
+                android:background="@android:color/transparent"
+                android:visibility="invisible"
+                android:src="@drawable/heart"/>
+
+            <ImageButton
+                android:id="@+id/down1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Imgbtnhart1"
+                android:layout_alignStart="@+id/Imgbtnhart1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/down" />
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/down1"
+                android:layout_alignStart="@+id/down1"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="11dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/share" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
